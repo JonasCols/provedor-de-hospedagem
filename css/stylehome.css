@@ -9,8 +9,6 @@
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
-    position: relative;
-    display: table;
 }
 
 .texto-azul {
@@ -18,21 +16,28 @@
 }
 
 .topo {
-    padding: 35px 0;
-    margin-bottom: 7px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 35px 50px;
+}
+
+.posicao-topo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .topo .logo {
+    width: 285px;
     display: flex;
-    float: left;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .img-logo {
     width: 80px;
-}
-
-.logo div {
-    margin-left: 15px;
 }
 
 .logo div h1 {
@@ -41,32 +46,43 @@
 
 .logo div p {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .links-topo {
-    float: right;
-    margin-top: 30px;
+    width: 385px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .links-topo a {
     text-decoration: none;
     color: #233032;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    margin: 0 10px;
 }
 
 .banner {
     background-color: #2f86d6;
-    padding: 100px 0;
+    padding: 50px 0;
+}
+
+.posicao-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .textos-banner {
     color: #ffffff;
-    float: left;
-    width: 470px;
-    margin: 8% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 20px;
+    flex: 1 1 300px;
 }
 
 .textos-banner h2 {
@@ -79,9 +95,12 @@
     letter-spacing: 0.4px;
 }
 
+.img-banner img {
+    width: 100%;
+}
+
 .img-banner {
-    width: 50%;
-    float: right;
+    flex: 1 1 468px;
 }
 
 .anuncio1 {
@@ -97,9 +116,19 @@
     padding: 40px 0;
 }
 
+.posicao-anuncio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
 .textos-anuncio {
-    float: left;
     width: 600px;
+    flex: 1 1 533;
+    margin: 0 auto;
 }
 
 .btn-anuncio1 {
@@ -111,22 +140,25 @@
 }
 
 .btn-anuncio1, .btn-anuncio2 {
-    width: 235px;
-    float: right;
+    width: 245px;
     padding: 20px;
-    position: relative;
+    margin: 0 auto;
     border-radius: 5px;
-    color: #ffffff;
-    text-decoration: none;
     font-weight: 700;
     font-size: 18px;
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-anuncio1 a, .btn-anuncio2 a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .img-btn-anuncio {
-    position: absolute;
-    left: 20px;
-    top: 39%;
+    width: 23px;
 }
 
 #informacoes {
@@ -134,7 +166,8 @@
 }
 
 #informacoes div h2{
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
     text-align: center;
     margin: 0 auto;
     font-size: 30px;
@@ -143,11 +176,13 @@
 
 .boxes-informacoes {
     display: flex;
+    justify-content: space-between;
 }
 
 .box-infor {
-    width: 33.3%;
+    width: 30%;
     text-align: center;
+    padding: 0 10px;
 }
 
 .box-infor p {
@@ -162,7 +197,7 @@
 
 #planos {
     background-color: #f6f6f6;
-    padding: 100px 0;
+    padding: 100px 10px;
 }
 
 #planos div h2 {

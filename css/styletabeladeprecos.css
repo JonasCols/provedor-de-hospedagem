@@ -8,8 +8,6 @@
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
-    position: relative;
-    display: table;
 }
 
 .texto-azul {
@@ -21,22 +19,27 @@
 }
 
 .topo {
+    width: 100%;
     padding: 35px 0;
-    margin-bottom: 7px;
     background-color: #2f86d6;
+}
+.posicao-topo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .topo .logo {
+    width: 285px;
     display: flex;
-    float: left;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .img-logo {
     width: 80px;
-}
-
-.logo div {
-    margin-left: 15px;
 }
 
 .logo div h1 {
@@ -45,12 +48,14 @@
 
 .logo div p {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .links-topo {
-    float: right;
-    margin-top: 30px;
+    width: 385px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .links-topo a {
@@ -58,7 +63,6 @@
     color: #ffffff;
     font-size: 18px;
     font-weight: 600;
-    margin: 0 10px;
 }
 
 .fundo-opaco {
@@ -71,7 +75,7 @@
 
 .tabela {
     margin: 0 auto;
-
+    width: 100%;
 }
 
 table {
